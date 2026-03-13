@@ -183,6 +183,18 @@ docs/
    system-architecture.md
    user-experience-flow.md
 
+## Learning Outcomes
+
+This project explores several key concepts in fintech system design:
+
+- Event-driven architecture for transaction processing
+- Budget tracking using digital envelope models
+- Scalable microservice-based payment workflows
+- Behavioral finance concepts in digital payments
+- Designing user-centric financial features
+
+The goal of this project is to explore how modern payment systems can help users build better financial habits through structured budgeting.
+
 ## Author
 
 Samyuktha Ravichandran
