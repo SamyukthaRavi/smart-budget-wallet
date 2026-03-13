@@ -122,7 +122,40 @@ User receives notification if the budget limit is nearing
 
 ## Architecture Diagram
 
-![Smart Budget Wallet Architecture](docs/diagrams/architecture-diagram.png)
+                +----------------------+
+                |   UPI Payment App    |
+                | (Amazon Pay / GPay)  |
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                |  Transaction Service |
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                | Categorization       |
+                | Service              |
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                |   Budget Service     |
+                | (Envelope Manager)   |
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                |  Deduction Engine    |
+                +----------+-----------+
+                           |
+              +------------+------------+
+              |                         |
+              v                         v
+    +------------------+      +------------------+
+    | Budget Database  |      | Notification     |
+    | (DynamoDB)       |      | Service (SNS)    |
+    +------------------+      +------------------+
 
 ## Future Enhancements
 
@@ -149,8 +182,6 @@ docs/
    product-roadmap.md
    system-architecture.md
    user-experience-flow.md
-   diagrams/
-       architecture-diagram.png
 
 ## Author
 
