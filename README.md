@@ -120,6 +120,9 @@ Amount is deducted from the envelope balance
         ↓  
 User receives notification if the budget limit is nearing
 
+## Architecture Diagram
+
+![Smart Budget Wallet Architecture](docs/diagrams/architecture-diagram.png)
 
 ## Future Enhancements
 
@@ -135,9 +138,23 @@ This repository explores how digital payment platforms can incorporate behaviora
 
 The goal is to demonstrate a scalable architecture that can be integrated into modern fintech payment systems.
 
+## Project Structure
+smart-budget-wallet:
+docs/
+   data-model.md
+   design-tradeoffs.md
+   edge-cases.md
+   month-end-savings-transfer.md
+   product-requirements.md
+   product-roadmap.md
+   system-architecture.md
+   user-experience-flow.md
+   diagrams/
+       architecture-diagram.png
+
 ## Author
 
-System design concept exploring digital budgeting solutions for payment platforms.
+Samyuktha Ravichandran
 
 ## Disclaimer
 
